@@ -15,7 +15,7 @@ set_target_properties(libopencv_core PROPERTIES
     IMPORTED_LOCATION "${libs}/${ANDROID_ABI}/libopencv_core.a")
 
 add_library(libopencv_dnn STATIC IMPORTED )
-set_target_properties(libopencv_core PROPERTIES
+set_target_properties(libopencv_dnn PROPERTIES
     IMPORTED_LOCATION "${libs}/${ANDROID_ABI}/libopencv_dnn.a")
 
 add_library(libopencv_features2d STATIC IMPORTED )
@@ -98,6 +98,25 @@ find_library( # Sets the name of the path variable.
 
 target_link_libraries( # Specifies the target library.
                        native-lib
+
+                       libopencv_calib3d
+                       libopencv_core
+                       libopencv_dnn
+                       libopencv_features2d
+                       libopencv_flann
+                       libopencv_highgui
+                       libopencv_imgcodecs
+                       libopencv_imgproc
+                       libopencv_java3
+                       libopencv_ml
+                       libopencv_objdetect
+                       libopencv_photo
+                       libopencv_shape
+                       libopencv_stitching
+                       libopencv_superres
+                       libopencv_video
+                       libopencv_videoio
+                       libopencv_videostab
 
                        # Links the target library to the log library
                        # included in the NDK.
