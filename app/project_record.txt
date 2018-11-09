@@ -1,0 +1,14 @@
+
+#### This file records how I build this project and the purpose of what I want to do via OpenCV inAndroid ####
+## I have build this project in several months ago, it build with openCVLibrary340 and I had converted a RGB bitmap to gray, but no other progresses
+## so, today I want to build it again with the latest library and record every steps, cuz I have bought a OpenCV book for learning systematically
+##
+## For that, I don't know how to write a record file by a correct format, so I just use a simple words to record it
+## 2018-11-09 17:07
+## Purpose:
+## 1. Included the latest library from OpenCV
+## 2. Build the project successfully
+## 3. Process a bitmap by OpenCV library
+## 4. Process a bitmap in JNI
+## 5. Process raw data in camera api
+## end
