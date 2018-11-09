@@ -16,3 +16,4 @@
 Step:
 1. Download OpenCV SDK in https://opencv.org/releases.html , version 3.4.3 (2018-11-09)
 2. Clear the project's old file(because I have built it before, and now I have forgot a lot of details about it. So I need to restart like this is a new project and record the steps)
+3. Import module in OpenCV SDK sdk/java, then I import the openCVLibrary343 and add the dependency
