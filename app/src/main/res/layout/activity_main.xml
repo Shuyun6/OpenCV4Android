@@ -7,10 +7,11 @@
     android:gravity="center"
     tools:context="shuyun.opencv4android.MainActivity">
 
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="aloha"/>
+        android:text="aloha" android:id="@+id/ivTips"
+        android:src="@mipmap/ic_launcher"/>
 
 
 </LinearLayout>
