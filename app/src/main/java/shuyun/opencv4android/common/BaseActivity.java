@@ -1,4 +1,4 @@
-package shuyun.opencv4android;
+package shuyun.opencv4android.common;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

@@ -1,5 +1,7 @@
 package shuyun.opencv4android.util;
 
+import shuyun.opencv4android.BuildConfig;
+
 /**
  * A customized Log class for this project
  * @Author shuyun
@@ -8,7 +10,7 @@ package shuyun.opencv4android.util;
 */
 public class Log {
 
-    private static final boolean DEBUG = true;
+    private static final boolean DEBUG = BuildConfig.DEBUG;
     private static final String TAG = "OpenCV4Android";
 
     public static void e(String content) {

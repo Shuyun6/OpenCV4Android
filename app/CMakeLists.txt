@@ -4,7 +4,7 @@ set(CMAKE_VERBOSE_MAKEFILE on)
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++14 -fexceptions -frtti")
 set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,--exclude-libs,libippicv.a -Wl,--exclude-libs,libippiw.a")
 
-set( OpenCV_DIR F:/OpenCV-android-sdk/sdk/native/jni )
+set( OpenCV_DIR J:\OpenCV-android-sdk\sdk\native\jni )
 find_package(OpenCV REQUIRED)
 
 add_library(

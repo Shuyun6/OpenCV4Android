@@ -1,17 +1,13 @@
-package shuyun.opencv4android;
+package shuyun.opencv4android.module.image;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.content.ContentResolver;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.widget.ImageView;
-
-import com.tbruyelle.rxpermissions2.RxPermissions;
 
 import org.opencv.android.Utils;
 import org.opencv.core.Mat;
@@ -22,9 +18,10 @@ import java.io.File;
 import java.io.FileOutputStream;
 
 import io.reactivex.Observable;
-import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
+import shuyun.opencv4android.R;
+import shuyun.opencv4android.common.CVBaseActivity;
 import shuyun.opencv4android.util.Log;
 
 /**
@@ -42,7 +39,7 @@ public class ImageProcessActivity extends CVBaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_imageprocess);
+        setContentView(R.layout.image_activity_imageprocess);
         ivLena = findViewById(R.id.ivLena);
         bmpLena = BitmapFactory.decodeResource(getResources(), R.mipmap.img_lena);
 
