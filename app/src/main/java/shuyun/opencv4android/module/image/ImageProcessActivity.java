@@ -64,9 +64,8 @@ public class ImageProcessActivity extends CVBaseActivity {
 
     @SuppressLint("CheckResult")
     private Observable<File> res2File(int resId){
-        //RxPermission may not work well at 2018-11-14 00:09
         return getRxPermissions()
-                .request(Manifest.permission.READ_EXTERNAL_STORAGE)
+                .request(Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 .flatMap(aBoolean -> {
                     if (aBoolean) {
                         return Observable.just(resId);
